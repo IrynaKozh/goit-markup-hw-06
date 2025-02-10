@@ -333,9 +333,11 @@ input {
   color: var(--accent-color);
   margin-bottom: 8px;
 }
-
 .section-three {
-  background-color: var(--footer-color);
+background-color: var(--footer-color);
+}
+.section-three-wrap {
+  
   /* padding: 120px 0; */
   padding: 96px 28px;
 }
@@ -895,8 +897,11 @@ input {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    
   }
-
+.section-three-wrap {
+    padding: 96px 108px;
+}
   .page-list {
     gap: 72px 24px;
   }
@@ -906,9 +911,6 @@ input {
 
   }
 
-    .section-three {
-      padding: 96px 108px;
-    }
   .team-list {
      gap: 64px 24px;
         }
