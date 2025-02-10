@@ -227,6 +227,7 @@ input {
   cubic-bezier: (0.4, 0, 0.2, 1);
 }
 /* Section2 */
+
 .section-two {
   /* padding: 120px 0; */
   padding: 96px 0;
@@ -813,4 +814,37 @@ input {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+    .page-list {
+      gap: 24px;
+    }
+    .page-item {
+      width: calc((100% - 24px) / 2);
+     
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1128px;
+    padding: 0 15px;
+  }
+    .section-two {
+      padding: 120px 0;
+    }
+
+  .page-list {
+  gap: 24px;
+  }
+
+  .page-item {
+      width: calc((100% - 72px) / 4);
+
+  }
 }
