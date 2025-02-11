@@ -36,7 +36,6 @@ body {
 .list {
   display: flex;
   gap: 40px;
-  align-items: center;
   list-style: none;
 }
 
@@ -115,9 +114,7 @@ input {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-}
+
 
 .header-item {
   font-style: normal;
@@ -209,6 +206,7 @@ input {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .title {
@@ -263,8 +261,7 @@ input {
 }
 
 .page-list {
-  display: flex;
-  justify-content: space-between;
+ 
   gap: 72px;
   flex-wrap: wrap;
 }
@@ -667,7 +664,14 @@ background-color: var(--footer-color);
   background-color: var(--logo-color);
   border-radius: 4px;
   border: none;
-}
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-button:hover,
+  .footer-button:focus {
+    background: var(--hover-color);
+    cubic-bezier: (0.4, 0, 0.2, 1);
+  }
 
 .footer-svg {
   fill: var(--white-color);
@@ -757,11 +761,12 @@ background-color: var(--footer-color);
   min-height: 336px;
 }
 
-.modal-form:focus {
+
+.modal-field:focus {
   border-color: var(--logo-color);
 }
 
-.modal-form:focus+.modal-svg {
+.modal-field:focus-within .modal-svg {
   fill: var(--logo-color);
 }
 
@@ -769,7 +774,6 @@ background-color: var(--footer-color);
   color: var(--icon-color);
   font-size: 12px;
   display: block;
-  margin-bottom: 4px;
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
@@ -838,6 +842,17 @@ background-color: var(--footer-color);
 }
 
 .modal-check {}
+.visually-hidden {
+  position:absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap
+  border: 0;
+}
 
 .modal-check-text {
   color: var(--icon-color);
