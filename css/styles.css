@@ -841,7 +841,10 @@ background-color: var(--footer-color);
   border-color: var(--logo-color);
 }
 
-.modal-check {}
+.icon-click {
+ fill: transparent;
+}
+
 .visually-hidden {
   position:absolute;
   width: 1px;
@@ -854,6 +857,9 @@ background-color: var(--footer-color);
   border: 0;
 }
 
+.visually-hidden:checked + .span-check .icon-click {
+  fill: #2e2f42;
+}
 .modal-check-text {
   color: var(--icon-color);
   font-size: 12px;
@@ -906,8 +912,8 @@ background-color: var(--footer-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
 }
+
 
 @media screen and (min-width: 768px) {
   .container {
