@@ -842,7 +842,7 @@ background-color: var(--footer-color);
 }
 
 .icon-click {
- fill: transparent;
+ 
 }
 
 .visually-hidden {
@@ -857,8 +857,9 @@ background-color: var(--footer-color);
   border: 0;
 }
 
-.visually-hidden:checked + .span-check .icon-click {
-  fill: #2e2f42;
+
+.input-check:checked + .form-label .span-check {
+  fill: var(--icon-color);
 }
 .modal-check-text {
   color: var(--icon-color);
@@ -912,6 +913,7 @@ background-color: var(--footer-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  fill: transparent;
 }
 
 
