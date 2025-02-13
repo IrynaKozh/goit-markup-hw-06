@@ -287,10 +287,12 @@ input {
 }
 
 .page-subtitle {
+
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+text-align: center;
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 8px;
@@ -429,8 +431,6 @@ background-color: var(--footer-color);
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  /* column-gap: 24px;
-  row-gap: 48px; */
   flex-direction: column;
   gap: 48px;
 }
@@ -925,6 +925,9 @@ background-color: var(--footer-color);
     max-width: 768px;
     
   }
+    .page-subtitle {
+      text-align: left;
+    }
 .section-three-wrap {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -948,6 +951,15 @@ background-color: var(--footer-color);
           flex-shrink: 0;
         }
 
+.portfolio-list {
+  flex-direction: row;
+  column-gap: 24px;
+  row-gap: 72px;
+
+}
+.portfolio-item {
+  width: calc((100% - 24px) / 2);
+}
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
  .section-three .container {
@@ -964,7 +976,12 @@ background-color: var(--footer-color);
   .section-two {
     padding: 120px 0;
   }
-
+ .page-subtitle {
+   text-align: left;
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+ }
   .page-list {
     gap: 24px;
   }
@@ -987,5 +1004,17 @@ background-color: var(--footer-color);
   .team-item {
    width: calc((100% - 72px) / 4);
   }
+    .section-three-div {
+      padding: 32px 0;
+    }
+.portfolio-list {
+  flex-direction: row;
+  column-gap: 24px;
+  row-gap: 48px;
 
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
 }
