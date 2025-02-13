@@ -336,7 +336,6 @@ input {
 background-color: var(--footer-color);
 }
 .section-three-wrap {
-
   padding: 96px 28px;
 }
 
@@ -410,8 +409,10 @@ background-color: var(--footer-color);
 
 /* Section4 */
 .section-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+    padding-top: 96px;
+      padding-bottom: 96px;
 }
 
 
@@ -428,8 +429,10 @@ background-color: var(--footer-color);
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  /* column-gap: 24px;
+  row-gap: 48px; */
+  flex-direction: column;
+  gap: 48px;
 }
 
 .portfolio-item {
@@ -979,11 +982,10 @@ background-color: var(--footer-color);
   }
   .team-list {
     gap: 24px;
+   
   }
   .team-item {
    width: calc((100% - 72px) / 4);
   }
-  .section-three-item {
-    flex-grow: 0;
-  }
+
 }
