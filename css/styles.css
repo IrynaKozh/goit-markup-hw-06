@@ -1043,6 +1043,7 @@ background-color: var(--footer-color);
   }
   .team-item {
    width: calc((100% - 72px) / 4);
+   max-width: 264px;
   }
     .section-three-div {
       padding: 32px 0;
