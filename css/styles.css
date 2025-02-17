@@ -81,11 +81,8 @@ input {
 /* Header */
 
 .header {
-  /* border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
     padding: 16px;
+  
 }
 
 .header-container {
@@ -99,22 +96,20 @@ input {
   align-items: center;
 }
 .header-list {
-  /* display: flex;
-  gap: 40px; */
  display: none;
 }
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
+  /* font-weight: 800; */
   font-size: 18px;
   line-height: 1.17;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--logo-color);
-  margin-right: 76px;
+  /* margin-right: 76px; */
+    margin-right: 120px;
 }
 
 .accent {
@@ -128,7 +123,7 @@ input {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
@@ -139,9 +134,7 @@ input {
 
 .curent::after {
   position: absolute;
-
   content: "";
-  /* display: block; */
   display: none;
   left: 0;
   bottom: -1px;
@@ -149,7 +142,6 @@ input {
   height: 4px;
   background-color: var(--hover-color);
   border-radius: 2px;
-
   margin-top: 20px;
 }
 
@@ -173,25 +165,24 @@ input {
 }
 
 .address-list {
-  /* display: flex; */
-  align-items: center;
-  gap: 40px;
   display: none;
+    /* align-items: center;
+      gap: 40px; */
 }
 
 .address-item {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-
-  letter-spacing: 0.02em;
-
+    font-size: 12px;
+    line-height: 1,17;
+    letter-spacing: 0.04em;
+  /* font-size: 16px;
+  line-height: 1,5;
+  letter-spacing: 0.02em; */
   color: var(--primary-color);
 }
 
 .address-link {
   color: var(--primary-color);
-  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -214,17 +205,16 @@ width: 24px;
   background-color: inherit;
   border: 1px solid var(--icon-color);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   display: block;
   margin-left: auto;
   margin-bottom: 24px;
+  
 }
 .menu-open-svg {
   fill: var(--accent-color);
 }
 .menu-close-svg {
+
 
 }
 .mob-menu {
@@ -238,9 +228,9 @@ padding: 24px 24px 40px 16px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-/* opacity: 0;
+opacity: 0;
 visibility: hidden;
-pointer-events: none; */
+pointer-events: none;
 }
 
 .mob-list {
@@ -265,14 +255,52 @@ pointer-events: none; */
 
 }
 .wrap2 {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
-.mob-adress-list {}
+.mob-adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 
-.mob-adress-item {}
+.mob-adress-item {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1,2;
+    letter-spacing: 0.02em;
+}
+.mob-adress-item:last-child .mob-address-link {
+  color: var(--primary-color);
+}
 
-.mob-address-link {}
+.mob-address-link {
+ 
+}
+.header-list-icon {
+  list-style: none;
+    display: flex;
+    gap: 40px;
+
+}
+
+.header-item-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header-link-icon {
+    width: 100%;
+      height: 100%;
+      background-color: var(--logo-color);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Main */
 .page {}
@@ -1004,8 +1032,32 @@ background-color: var(--footer-color);
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    
   }
+    .header {
+      border-bottom: 1px solid #e7e9fc;
+      box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+      padding: 16px;
+    }
+
+.menu-open {
+  display: none;
+}
+.header-list {
+display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.curent::after {
+  display: block;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
   .section-one{
     max-width: 768px;
     padding: 112px 0;
