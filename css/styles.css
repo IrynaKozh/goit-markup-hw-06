@@ -628,7 +628,6 @@ background-color: var(--footer-color);
 /* Footer */
 .footer {
   background-color: var(--accent-color);
-  /* padding: 100px 0; */
   padding: 96px 0;
 }
 
@@ -636,14 +635,12 @@ background-color: var(--footer-color);
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  /* font-weight: 800; */
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
   display: inline-block;
-  /* margin-bottom: 16px; */
   margin-bottom: 17.5px;
  
 }
@@ -674,8 +671,6 @@ background-color: var(--footer-color);
 
 .footer-flex {
   display: flex;
-  /* align-items: baseline; */
-/* + */
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 72px;
@@ -703,13 +698,12 @@ background-color: var(--footer-color);
 }
 
 .footer-logo {
-  /* margin-right: 120px; */
+ 
   text-align: center;
 }
 
 .footer-div {
-  /* margin-right: 80px; */
-
+ 
 }
 
 .link-icon {
@@ -727,9 +721,9 @@ background-color: var(--footer-color);
   /* + */
 text-align: center;
 }
-.div-mob {
+.div-mob {}
 
-}
+
 .footer-text-form {
   color: var(--white-color);
   font-weight: 500;
@@ -750,7 +744,6 @@ text-align: center;
 }
 
 .footer-input {
-  /* width: 264px; */
   width: 288px;
   height: 40px;
   padding: 8px 16px;
@@ -1140,12 +1133,25 @@ padding-right: 24px;
 .footer-flex {
   flex-direction: row;
 column-gap: 24px;
+row-gap: 88px;
 align-items: start;
-    
 }
+.footer-logo {
 
+  text-align: left;
+}
 .footer-text-social {
   text-align: start;
+}
+.footer-div-form {
+  display: flex;
+  gap: 24px;
+  align-items:flex-end;
+  text-align: left;
+}
+.footer-input {
+  width: 264px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
@@ -1244,5 +1250,25 @@ align-items: start;
 .section-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+/* footer */
+.footer {
+  padding: 100px 0;
+}
+.footer {
+font-weight: 800; 
+margin-bottom: 16px;
+}
+.footer-flex {
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.footer-logo {
+  margin-right: 120px;
+}
+.footer-div {
+  margin-right: 80px;
 }
 }
