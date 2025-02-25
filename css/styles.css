@@ -198,7 +198,9 @@ input {
   background-color: inherit;
   border: 1px solid var(--icon-color);
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
   
@@ -240,7 +242,7 @@ pointer-events: none;
 .mob-link {
   font-weight: 700;
     font-size: 36px;
-    line-height: 1,11;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
@@ -597,8 +599,6 @@ background-color: var(--footer-color);
 .box {
   position: relative;
   overflow: hidden;
-  width: 360px;
-  height: 300px;
 }
 
 .overlay-text {
