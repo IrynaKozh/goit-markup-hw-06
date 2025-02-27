@@ -1163,7 +1163,11 @@ padding: 80px 164px 96px 108px;
   width: 264px;
   margin-bottom: 0;
 }
-
+.form-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
 @media screen and (min-width: 768px) and (max-width: 1158px) {
  .section-three .container {
     max-width: 552px;
