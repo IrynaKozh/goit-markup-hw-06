@@ -167,6 +167,7 @@ input {
 }
 
 .address-item {
+  font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1,17;
@@ -683,6 +684,7 @@ background-color: var(--footer-color);
   align-items: center;
   /* + */
   padding: 115px 24px 77px 8px;
+  
 }
 
 .gap {
@@ -736,7 +738,7 @@ text-align: center;
       font-weight: 500;
       line-height: 1.5;
       letter-spacing: 0.02em;
-      margin-bottom: 16px;
+
 }
 
 
@@ -747,7 +749,6 @@ text-align: center;
 
 .footer-form {
   display: flex;
-  /* gap: 24px; */
   gap: 16px;
   flex-direction: column;
 }
@@ -1168,9 +1169,9 @@ padding: 80px 164px 96px 108px;
   flex-direction: row;
   gap: 24px;
 }
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
  .section-three .container {
-    max-width: 552px;
+    max-width: 584px;
   }
 }
 }
@@ -1268,11 +1269,7 @@ padding: 80px 164px 96px 108px;
 /* footer */
 .footer {
   padding: 100px 0;
-}
-.footer {
-font-weight: 800; 
-margin-bottom: 16px;
-}
+
 .footer-flex {
   align-items: baseline;
   flex-direction: row;
