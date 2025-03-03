@@ -101,7 +101,6 @@ input {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  /* font-weight: 800; */
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -682,8 +681,7 @@ background-color: var(--footer-color);
   flex-wrap: wrap;
   row-gap: 72px;
   align-items: center;
-  /* + */
-  padding: 115px 24px 77px 8px;
+
   
 }
 
@@ -1137,15 +1135,13 @@ padding-right: 24px;
   width: 360px;
 }
 /* footer */
-.footer {
 
-}
 .footer-flex {
 flex-direction: row;
 column-gap: 24px;
 row-gap: 88px;
 align-items: start;
-padding: 80px 164px 96px 108px;
+
 }
 .footer-logo {
 
@@ -1169,12 +1165,16 @@ padding: 80px 164px 96px 108px;
   flex-direction: row;
   gap: 24px;
 }
+}
 @media screen and (min-width: 768px) and (max-width: 1157px) {
  .section-three .container {
     max-width: 584px;
   }
+     .footer .container {
+       max-width: 584px;
+     }
 }
-}
+
 @media screen and (min-width: 1158px) {
 
   .container {
